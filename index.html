@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heroes-Game</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.jpg" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Heroes Game</h1>
+      <div class="btns-container">
+        <button class="btn" id="show-heroes">Show Heroes</button>
+        <button class="btn start-fight" id="start-fight">Start Fight</button>
+      </div>
+      <div class="heroes-container">
+        <div class="hero-container">
+          <div class="hero-avatar hulk"></div>
+          <div class="hero-details">
+            <span class="hero-name">Hulk</span>
+            <span>Life: 40hp</span>
+            <span>LVL: 30</span>
+            <span>Health: 90%</span>
+          </div>
+        </div>
+        <div class="hero-container">
+          <div class="hero-avatar spiderman"></div>
+          <div class="hero-details">
+            <span class="hero-name">Spiderman</span>
+            <span>Life: 90hp</span>
+            <span>LVL: 40</span>
+            <span>Health: 49%</span>
+          </div>
+        </div>
+        <div class="hero-container">
+          <div class="hero-avatar ironman"></div>
+          <div class="hero-details">
+            <span class="hero-name">Ironman</span>
+            <span>Life: 30hp</span>
+            <span>LVL: 60</span>
+            <span>Health: 99%</span>
+          </div>
+        </div>
+      </div>
+      <div class="show-winner" id="show-winner"></div>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

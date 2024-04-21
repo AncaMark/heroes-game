@@ -1,0 +1,158 @@
+body {
+  background-image: url("assets/bg-image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-position: top center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  text-align: center;
+  font-size: 50px;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 20px;
+}
+
+.btns-container {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  font-size: 20px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.start-fight {
+  display: none;
+}
+
+.heroes-container {
+  display: none;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  height: auto;
+  flex-basis: 30%;
+  border-radius: 20px;
+  padding-bottom: 40px;
+}
+
+.hero-avatar {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 30px 0;
+}
+
+.hulk {
+  background-image: url("assets/hulk.png");
+}
+
+.spiderman {
+  background-image: url("assets/spiderman.png");
+}
+
+.ironman {
+  background-image: url("assets/ironman.png");
+}
+
+.hero-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 18px;
+}
+
+.hero-name {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.show-winner {
+  display: none;
+  background-color: rgba(224, 231, 222, 0.5);
+  padding: 30px;
+  width: 800px;
+  margin: 30px auto;
+  font-size: 20px;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: 700;
+  animation: pulse-animation 2s infinite;
+}
+
+@keyframes pulse-animation {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
+.d-none {
+  display: none;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-block {
+  display: block;
+}
+
+/* RESPONSIVE CSS */
+
+@media screen and (max-width: 767px) {
+  body {
+    background-repeat: repeat;
+  }
+
+  .heroes-container {
+    flex-direction: column;
+    order: 2;
+  }
+
+  .hero-container {
+    margin-bottom: 20px;
+  }
+
+  .hero-details {
+    margin-bottom: 20px;
+  }
+
+  .show-winner {
+    width: auto;
+    order: 1;
+  }
+}
